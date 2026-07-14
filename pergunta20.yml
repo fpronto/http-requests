@@ -1,10 +1,15 @@
 info:
   name: pergunta20
   type: http
+  seq: 1
 
 http:
   method: GET
-  url: "{{url}}"
+  url: '{{url2}}/character?name="Abcxy123"'
+  params:
+    - name: name
+      value: '"Abcxy123"'
+      type: query
   auth: inherit
 
 settings:
@@ -12,4 +17,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-​
