@@ -1,0 +1,234 @@
+===============================================================================
+                    IEFP - Linguagens de Programação - Programação em JAVA 
+                           MÓDULO: Desenvolvimento de aplicações web em JAVA
+                     EXERCÍCIO PRÁTICO: O TRIATLO DAS APIs
+===============================================================================
+
+INSTRUÇÕES DE ENTREGA:
+1. Para cada uma das 30 perguntas abaixo, deves criar um pedido (Request) organizado no cliente HTTP Bruno.
+2. Dá a cada pedido o nome da pergunta (ex.: pergunta01).
+3. O teu repositório Git final de entrega deve conter:
+   - Este ficheiros de texto (".txt") com todas as respostas preenchidas nos campos.
+   - Os ficheiro do Bruno para cada pedido.
+
+NOME DO ALUNO: Francisco Pronto
+DATA: 14/07/2026
+
+===============================================================================
+FASE 1: JSONPlaceholder
+URL base: https://jsonplaceholder.typicode.com
+(guia: https://jsonplaceholder.typicode.com/guide/)
+===============================================================================
+
+01. Faz um pedido para obter os dados do utilizador com o ID 3:
+Qual é o nome completo ("name")?
+RESPOSTA: Clementine Bauch
+Qual é o endereço de email ("email")?
+RESPOSTA: Nathan@yesenia.net
+Qual é o nome da empresa ("company.name") para a qual este utilizador trabalha?
+RESPOSTA: Romaguera-Jacobson
+
+02. Faz um pedido para obter a lista completa de publicações ("posts"):
+Quantos itens existem no total dentro do array devolvido?
+RESPOSTA: 100
+Qual é o título ("title") da primeira publicação da lista?
+RESPOSTA: sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+
+03. Faz um pedido que filtre as publicações de forma a obter apenas as que pertencem ao utilizador com o ID 2:
+Quantas publicações pertencem especificamente a este utilizador?
+RESPOSTA: 10
+Qual é o ID da primeira publicação encontrada para ele?
+RESPOSTA: 21
+
+04. Tenta obter os dados de um post inexistente, utilizando o ID 9999:
+Qual é o Status Code HTTP devolvido?
+RESPOSTA: 404
+O que aparece escrito no corpo (body) da resposta?
+RESPOSTA: {}
+
+05. Tenta criar uma nova publicação:
+Qual é o Status Code recebido?
+RESPOSTA: 201
+Qual é o ID atribuído pelo servidor a este novo recurso?
+RESPOSTA: 101
+
+
+06. Faz um pedido GET para o utilizador com o ID 1 e analisa a aba de Headers da resposta no Bruno:
+Qual é o valor do Header "Content-Type" devolvido pelo servidor?
+RESPOSTA: application/json; charset=utf-8
+Que software de servidor web ("server") está a responder ao pedido?
+RESPOSTA: cloudflare
+
+
+07. Faz um pedido POST para criar um post enviando um objeto JSON inválido:
+Qual é o Status Code recebido?
+RESPOSTA: 500
+
+08. Faz um pedido para atualizar completamente a publicação com o ID 1:
+Que Status Code é devolvido pelo servidor?
+RESPOSTA: 200
+
+09. Faz um pedido para atualizar parcialmente a publicação com o ID 1, modificando apenas o campo do título:
+Que Status Code é devolvido pelo servidor?
+RESPOSTA: 200
+
+
+10. Executa um pedido para eliminar a publicação com o ID 1:
+Qual é o Status Code recebido?
+RESPOSTA: 200
+O que contém o corpo da resposta?
+RESPOSTA: {}
+
+================================================================================
+FASE 2: Rick and Morty API
+URL base: https://rickandmortyapi.com/api/
+================================================================================
+
+11. Faz um pedido para obter as informações do personagem com o ID 150:
+Qual é o seu nome ("name")?
+RESPOSTA: 
+Qual é o seu estado atual ("status")?
+RESPOSTA: 
+Qual é a sua espécie ("species")?
+RESPOSTA: 
+
+12. Aplica um filtro através de parâmetros de pesquisa (Query Parameters) para procurar personagens com o nome "Rick". Olha para o nó de metadados "info":
+Qual é o número total ("count") de personagens que coincidem com o critério?
+RESPOSTA: 
+Quantas páginas ("pages") existem no total?
+RESPOSTA: 
+Qual é o nome do primeiro personagem do array de resultados?
+RESPOSTA: 
+
+13. Refina a pesquisa anterior combinando múltiplos parâmetros: procura por personagens com o nome "Rick" que estejam simultaneamente mortos ("Dead"):
+Quantos personagens cumprem estes critérios no total?
+RESPOSTA: 
+Qual é a espécie ("species") do primeiro resultado?
+RESPOSTA: 
+Qual é o seu género ("gender")?
+RESPOSTA: 
+
+14. Faz uma pesquisa para obter todas as personagens do género feminino ("Female") que estejam vivas ("Alive"):
+Quantas páginas de resultados existem no total para esta listagem?
+RESPOSTA: 
+Qual é o ID da primeira personagem exibida?
+RESPOSTA: 
+
+15. Faz a mesma pesquisa de personagens femininas vivas, mas para aceder à página 2 de resultados:
+Qual é o nome ("name") da primeira personagem que aparece nesta página?
+RESPOSTA: 
+
+16. Obtém os detalhes do personagem "Morty Smith" (ID 2):
+Qual é o seu estado ("status")?
+RESPOSTA: 
+Em quantos episódios aparece no total?
+RESPOSTA: 
+Qual é o URL do primeiro episódio em que aparece?
+RESPOSTA: 
+
+17. Faz um novo pedido utilizando diretamente o URL do primeiro episódio que encontraste na pergunta anterior:
+Qual é o título ("name") desse episódio?
+RESPOSTA: 
+Qual é a data em que foi para o ar?
+RESPOSTA: 
+Qual é o código de identificação do episódio ("episode")?
+RESPOSTA: 
+
+18. Procura os detalhes da personagem "Summer Smith" (ID 3):
+Qual é o nome do seu local de origem ("origin.name")?
+RESPOSTA: 
+Qual é o nome da sua localização atual ("location.name")?
+RESPOSTA: 
+
+19. Segue o URL correspondente ao local de origem da "Summer Smith" efetuando um novo pedido:
+Qual é o tipo ("type") desse local?
+RESPOSTA: 
+Qual é a sua dimensão ("dimension")?
+RESPOSTA: 
+Quantos residentes ("residents") estão listados como habitantes oficiais?
+RESPOSTA: 
+
+20. Efetua uma pesquisa de personagens utilizando um nome completamente aleatório que não exista no sistema - "Abcxyz123":
+Qual é o Status Code HTTP devolvido?
+RESPOSTA: 
+Qual é a mensagem de erro contida no corpo do JSON?
+RESPOSTA: 
+
+================================================================================
+FASE 3: PokeAPI
+URL base: https://pokeapi.co/api/v2
+================================================================================
+
+21. Faz um pedido para obter os dados do pokémon "bulbasaur". Dentro do objeto de imagens ("sprites"):
+Qual é o URL da imagem frontal padrão ("front_default")?
+RESPOSTA: 
+Qual é o URL da imagem traseira padrão ("back_default")?
+RESPOSTA: 
+Qual é o URL da versão brilhante ("front_shiny")?
+RESPOSTA: 
+
+22. Faz um pedido para obter os dados do pokémon "ditto". Navega mais a fundo na estrutura de objetos aninhados (nested objects): dentro de "sprites", procura por "other" e depois por "official-artwork":
+Qual é o URL da imagem "front_default" contido neste nível específico?
+RESPOSTA: 
+
+23. Analisa o array de estatísticas ("stats") do "charmander":
+Qual é o valor base ("base_stat") da estatística de velocidade ("speed")?
+RESPOSTA: 
+Qual é o valor base dos pontos de vida ("hp")?
+RESPOSTA: 
+Qual é o valor de esforço ("effort") da estatística de ataque ("attack")?
+RESPOSTA: 
+
+24. Verifica o array de tipos ("types") do pokémon "charizard":
+Qual é o nome do tipo que aparece na posição/slot 1?
+RESPOSTA: 
+Qual é o nome do tipo que aparece no slot 2?
+RESPOSTA: 
+Qual é o peso ("weight") total registado para este pokémon?
+RESPOSTA: 
+
+25. Faz um pedido para obter os dados do pokémon "eevee". Consulta o array de índices de jogos ("game_indices"):
+Em quantas versões de jogos diferentes este pokémon marcou presença?
+RESPOSTA: 
+Qual é o nome da primeira versão listada?
+RESPOSTA: 
+Qual é a altura ("height") do pokémon?
+RESPOSTA: 
+
+26. Imagina que queres listar todos os pokémons que possuem a habilidade "chlorophyll". Se tentares passar essa habilidade como filtro ou parâmetro no endpoint principal de /pokemon:
+Que Status Code HTTP recebes?
+RESPOSTA: 
+Quantos pokémon são devolvidos na resposta?
+RESPOSTA: 
+O resultado é de facto o conjunto de pokémons que têm a habilidade?
+RESPOSTA: 
+
+27. Agora tenta usar o endpoint específico de habilidades ("/ability") seguido pelo nome da habilidade "chlorophyll":
+Quantos pokémons partilham esta habilidade no total?
+RESPOSTA: 
+Qual é o nome do primeiro pokémon da lista?
+RESPOSTA: 
+
+28. Agora procura pela habilidade "battle-armor" e localiza o array de descrições ("effect_entries"):
+Qual é a descrição curta do efeito ("short_effect") em língua inglesa ("en")?
+RESPOSTA: 
+Qual é o efeito completo ("effect") também em inglês?
+RESPOSTA: 
+Quantos idiomas diferentes têm descrições nesta lista no total?
+RESPOSTA: 
+
+29. Faz um pedido para obter os dados do pokémon "pikachu". Localiza o URL do campo da sua espécie ("species") e faz um pedido para esse endereço. Dentro dos dados da espécie:
+Qual é o valor da sua taxa de captura ("capture_rate")?
+RESPOSTA: 
+Qual é a cor ("color.name") do pokémon?
+RESPOSTA: 
+Qual é o URL fornecido para a sua cadeia de evolução ("evolution_chain")?
+RESPOSTA: 
+
+30. Efetua um pedido para o URL da cadeia de evolução ("evolution_chain") obtido na pergunta anterior. Examina o objeto "chain" e identifica a sequência evolutiva completa:
+Qual é o nome do pokémon base?
+RESPOSTA: 
+Qual é o nome da sua primeira evolução?
+RESPOSTA: 
+Qual é o nome da sua segunda evolução?
+RESPOSTA:

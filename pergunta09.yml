@@ -1,0 +1,21 @@
+info:
+  name: pergunta09
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{url1}}/posts/1"
+  body:
+    type: json
+    data: |-
+      {
+        "title": "novo titulo"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

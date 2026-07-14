@@ -1,0 +1,28 @@
+opencollection: 1.0.0
+
+info:
+  name: http-requests
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  variables:
+    - name: url1
+      value: https://jsonplaceholder.typicode.com
+    - name: url2
+      value: https://rickandmortyapi.com/api
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
