@@ -1,0 +1,15 @@
+info:
+  name: pergunta11
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url2}}/character/150"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

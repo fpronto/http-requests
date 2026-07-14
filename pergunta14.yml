@@ -1,0 +1,22 @@
+info:
+  name: pergunta14
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{url2}}/character?gender=Female&status=Alive"
+  params:
+    - name: gender
+      value: Female
+      type: query
+    - name: status
+      value: Alive
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

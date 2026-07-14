@@ -86,73 +86,75 @@ URL base: https://rickandmortyapi.com/api/
 
 11. Faz um pedido para obter as informações do personagem com o ID 150:
 Qual é o seu nome ("name")?
-RESPOSTA: 
+RESPOSTA: Cornvelious Daniel
 Qual é o seu estado atual ("status")?
-RESPOSTA: 
+RESPOSTA: Dead
 Qual é a sua espécie ("species")?
-RESPOSTA: 
+RESPOSTA: Alien
 
 12. Aplica um filtro através de parâmetros de pesquisa (Query Parameters) para procurar personagens com o nome "Rick". Olha para o nó de metadados "info":
 Qual é o número total ("count") de personagens que coincidem com o critério?
-RESPOSTA: 
+RESPOSTA: 107
 Quantas páginas ("pages") existem no total?
-RESPOSTA: 
+RESPOSTA: 6
 Qual é o nome do primeiro personagem do array de resultados?
-RESPOSTA: 
+RESPOSTA: Rick Sanchez
 
 13. Refina a pesquisa anterior combinando múltiplos parâmetros: procura por personagens com o nome "Rick" que estejam simultaneamente mortos ("Dead"):
 Quantos personagens cumprem estes critérios no total?
-RESPOSTA: 
+RESPOSTA: 54
 Qual é a espécie ("species") do primeiro resultado?
-RESPOSTA: 
+RESPOSTA: Human
 Qual é o seu género ("gender")?
-RESPOSTA: 
+RESPOSTA: Male
 
 14. Faz uma pesquisa para obter todas as personagens do género feminino ("Female") que estejam vivas ("Alive"):
 Quantas páginas de resultados existem no total para esta listagem?
-RESPOSTA: 
+RESPOSTA: 5
 Qual é o ID da primeira personagem exibida?
-RESPOSTA: 
+RESPOSTA: 3
 
 15. Faz a mesma pesquisa de personagens femininas vivas, mas para aceder à página 2 de resultados:
 Qual é o nome ("name") da primeira personagem que aparece nesta página?
-RESPOSTA: 
+RESPOSTA: Joyce Smith
 
 16. Obtém os detalhes do personagem "Morty Smith" (ID 2):
 Qual é o seu estado ("status")?
-RESPOSTA: 
+RESPOSTA: Alive
 Em quantos episódios aparece no total?
-RESPOSTA: 
+RESPOSTA: 51
 Qual é o URL do primeiro episódio em que aparece?
-RESPOSTA: 
+RESPOSTA: https://rickandmortyapi.com/api/episode/1
 
 17. Faz um novo pedido utilizando diretamente o URL do primeiro episódio que encontraste na pergunta anterior:
 Qual é o título ("name") desse episódio?
-RESPOSTA: 
+RESPOSTA: Pilot
 Qual é a data em que foi para o ar?
-RESPOSTA: 
+RESPOSTA: December 2, 2013
 Qual é o código de identificação do episódio ("episode")?
-RESPOSTA: 
+RESPOSTA: S01E01
 
 18. Procura os detalhes da personagem "Summer Smith" (ID 3):
 Qual é o nome do seu local de origem ("origin.name")?
-RESPOSTA: 
+RESPOSTA: Earth (Replacement Dimension)
 Qual é o nome da sua localização atual ("location.name")?
-RESPOSTA: 
+RESPOSTA: Earth (Replacement Dimension)
 
 19. Segue o URL correspondente ao local de origem da "Summer Smith" efetuando um novo pedido:
 Qual é o tipo ("type") desse local?
-RESPOSTA: 
+RESPOSTA: Planet
 Qual é a sua dimensão ("dimension")?
-RESPOSTA: 
+RESPOSTA: Replacement Dimension
 Quantos residentes ("residents") estão listados como habitantes oficiais?
-RESPOSTA: 
+RESPOSTA: 230
 
 20. Efetua uma pesquisa de personagens utilizando um nome completamente aleatório que não exista no sistema - "Abcxyz123":
 Qual é o Status Code HTTP devolvido?
-RESPOSTA: 
+RESPOSTA: 404
 Qual é a mensagem de erro contida no corpo do JSON?
-RESPOSTA: 
+RESPOSTA: {
+  "error": "There is nothing here"
+}
 
 ================================================================================
 FASE 3: PokeAPI

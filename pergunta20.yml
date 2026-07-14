@@ -1,0 +1,15 @@
+info:
+  name: pergunta20
+  type: http
+
+http:
+  method: GET
+  url: "{{url}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​
