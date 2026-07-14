@@ -20,6 +20,8 @@ request:
       value: https://jsonplaceholder.typicode.com
     - name: url2
       value: https://rickandmortyapi.com/api
+    - name: url3
+      value: https://pokeapi.co/api/v2
 bundled: false
 extensions:
   bruno:

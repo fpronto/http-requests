@@ -163,74 +163,74 @@ URL base: https://pokeapi.co/api/v2
 
 21. Faz um pedido para obter os dados do pokémon "bulbasaur". Dentro do objeto de imagens ("sprites"):
 Qual é o URL da imagem frontal padrão ("front_default")?
-RESPOSTA: 
+RESPOSTA: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
 Qual é o URL da imagem traseira padrão ("back_default")?
-RESPOSTA: 
+RESPOSTA: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png
 Qual é o URL da versão brilhante ("front_shiny")?
-RESPOSTA: 
+RESPOSTA: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png
 
 22. Faz um pedido para obter os dados do pokémon "ditto". Navega mais a fundo na estrutura de objetos aninhados (nested objects): dentro de "sprites", procura por "other" e depois por "official-artwork":
 Qual é o URL da imagem "front_default" contido neste nível específico?
-RESPOSTA: 
+RESPOSTA: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
 
 23. Analisa o array de estatísticas ("stats") do "charmander":
 Qual é o valor base ("base_stat") da estatística de velocidade ("speed")?
-RESPOSTA: 
+RESPOSTA: 65
 Qual é o valor base dos pontos de vida ("hp")?
-RESPOSTA: 
+RESPOSTA: 39
 Qual é o valor de esforço ("effort") da estatística de ataque ("attack")?
-RESPOSTA: 
+RESPOSTA: 0
 
 24. Verifica o array de tipos ("types") do pokémon "charizard":
 Qual é o nome do tipo que aparece na posição/slot 1?
-RESPOSTA: 
+RESPOSTA: fire
 Qual é o nome do tipo que aparece no slot 2?
-RESPOSTA: 
+RESPOSTA: flying
 Qual é o peso ("weight") total registado para este pokémon?
-RESPOSTA: 
+RESPOSTA: 905
 
 25. Faz um pedido para obter os dados do pokémon "eevee". Consulta o array de índices de jogos ("game_indices"):
 Em quantas versões de jogos diferentes este pokémon marcou presença?
-RESPOSTA: 
+RESPOSTA: 20
 Qual é o nome da primeira versão listada?
-RESPOSTA: 
+RESPOSTA: red
 Qual é a altura ("height") do pokémon?
-RESPOSTA: 
+RESPOSTA: 3
 
 26. Imagina que queres listar todos os pokémons que possuem a habilidade "chlorophyll". Se tentares passar essa habilidade como filtro ou parâmetro no endpoint principal de /pokemon:
 Que Status Code HTTP recebes?
-RESPOSTA: 
+RESPOSTA: 200
 Quantos pokémon são devolvidos na resposta?
-RESPOSTA: 
+RESPOSTA: 20
 O resultado é de facto o conjunto de pokémons que têm a habilidade?
-RESPOSTA: 
+RESPOSTA: Não
 
 27. Agora tenta usar o endpoint específico de habilidades ("/ability") seguido pelo nome da habilidade "chlorophyll":
 Quantos pokémons partilham esta habilidade no total?
-RESPOSTA: 
+RESPOSTA: 39
 Qual é o nome do primeiro pokémon da lista?
-RESPOSTA: 
+RESPOSTA: bulbasaur
 
 28. Agora procura pela habilidade "battle-armor" e localiza o array de descrições ("effect_entries"):
 Qual é a descrição curta do efeito ("short_effect") em língua inglesa ("en")?
-RESPOSTA: 
+RESPOSTA: Protects against critical hits.
 Qual é o efeito completo ("effect") também em inglês?
-RESPOSTA: 
+RESPOSTA: Moves cannot score critical hits against this Pokémon. This ability functions identically to Shell Armor.
 Quantos idiomas diferentes têm descrições nesta lista no total?
-RESPOSTA: 
+RESPOSTA: 3
 
 29. Faz um pedido para obter os dados do pokémon "pikachu". Localiza o URL do campo da sua espécie ("species") e faz um pedido para esse endereço. Dentro dos dados da espécie:
 Qual é o valor da sua taxa de captura ("capture_rate")?
-RESPOSTA: 
+RESPOSTA: 190
 Qual é a cor ("color.name") do pokémon?
-RESPOSTA: 
+RESPOSTA: yellow
 Qual é o URL fornecido para a sua cadeia de evolução ("evolution_chain")?
-RESPOSTA: 
+RESPOSTA: https://pokeapi.co/api/v2/evolution-chain/10/
 
 30. Efetua um pedido para o URL da cadeia de evolução ("evolution_chain") obtido na pergunta anterior. Examina o objeto "chain" e identifica a sequência evolutiva completa:
 Qual é o nome do pokémon base?
-RESPOSTA: 
+RESPOSTA: pichu
 Qual é o nome da sua primeira evolução?
-RESPOSTA: 
+RESPOSTA: pikachu
 Qual é o nome da sua segunda evolução?
-RESPOSTA:
+RESPOSTA: raichu
